@@ -7,3 +7,4 @@ linter:
     - avoid_redundant_argument_values
     - avoid_void_async
     - require_trailing_commas
+    - always_use_package_imports
