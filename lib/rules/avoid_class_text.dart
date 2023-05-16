@@ -8,7 +8,7 @@ class AvoidClassTextCode extends DartLintRule {
   /// This is used for `// ignore: code` and enabling/disabling the lint
   static const _code = LintCode(
     name: 'avoid_class_text',
-    problemMessage: 'Evite user Text, use CoffeeText 🦄',
+    problemMessage: 'Evite usar Text, use CoffeeText 🦄',
   );
 
   @override
