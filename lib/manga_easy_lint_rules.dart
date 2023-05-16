@@ -1,6 +1,7 @@
 // This is the entrypoint of our custom linter
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 import 'package:manga_easy_lint_rules/rules/avoid_class_text.dart';
+import 'package:manga_easy_lint_rules/rules/avoid_class_textbutton.dart';
 
 PluginBase createPlugin() => _ExampleLinter();
 
@@ -10,5 +11,6 @@ class _ExampleLinter extends PluginBase {
   @override
   List<LintRule> getLintRules(CustomLintConfigs configs) => [
         AvoidClassTextCode(),
+        AvoidClassTextButtonCode(),
       ];
 }
