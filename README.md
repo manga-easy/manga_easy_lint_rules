@@ -12,7 +12,7 @@ dev_dependencies:
   manga_easy_lint_rules:
     git:
       url: https://github.com/manga-easy/manga_easy_lint_rules.git
-      ref: v1.0.1
+      ref: v1.1.0
 ```
 
 Mude o include dentro do arquivo analysis_options.yaml
