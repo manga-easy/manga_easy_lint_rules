@@ -1,6 +1,6 @@
 name: manga_easy_lint_rules
 description: Um lib com as regras de lint da Manga easy.
-version: 1.0.0
+version: 1.1.0
 # repository: https://github.com/my_org/my_repo
 
 environment:
@@ -9,12 +9,12 @@ environment:
 # Add regular dependencies here.
 dependencies:
   # we will use analyzer for inspecting Dart files
-  analyzer: ^5.12.0
+  analyzer: ^5.13.0
   analyzer_plugin: ^0.11.2
   # custom_lint_test_builder will give us tools for writing lints
   custom_lint_builder: ^0.4.0
 
 
 dev_dependencies:
-  lints: ^2.1.0
-  test: ^1.24.2
+  lints: ^2.1.1
+  test: ^1.24.3
