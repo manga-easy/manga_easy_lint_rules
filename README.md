@@ -8,11 +8,11 @@ Adicione o package como dev_dependencies no pubspec.
 
 ```
 dev_dependencies:
- custom_lint: 0.4.0
+ custom_lint: 0.5.0
   manga_easy_lint_rules:
     git:
       url: https://github.com/manga-easy/manga_easy_lint_rules.git
-      ref: v1.1.0
+      ref: v1.1.1
 ```
 
 Mude o include dentro do arquivo analysis_options.yaml
