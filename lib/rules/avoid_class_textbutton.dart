@@ -2,7 +2,7 @@ import 'package:analyzer/error/listener.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 
 class AvoidClassTextButtonCode extends DartLintRule {
-  AvoidClassTextButtonCode() : super(code: _code);
+  const AvoidClassTextButtonCode() : super(code: _code);
 
   /// Metadata about the warning that will show-up in the IDE.
   /// This is used for `// ignore: code` and enabling/disabling the lint
@@ -19,8 +19,8 @@ class AvoidClassTextButtonCode extends DartLintRule {
   ) {
     // Our lint will highlight all variable declarations with our custom warning.
     context.registry.addInstanceCreationExpression((node) {
-      final typeName = node.constructorName.type.name;
-      if (typeName.name == 'TextButton') {
+      final typeName = node.constructorName.type.runtimeType.toString();
+      if (typeName == 'TextButton') {
         reporter.reportErrorForNode(code, node);
       }
     });

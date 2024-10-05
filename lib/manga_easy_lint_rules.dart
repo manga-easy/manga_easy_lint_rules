@@ -12,7 +12,7 @@ PluginBase createPlugin() => _ExampleLinter();
 class _ExampleLinter extends PluginBase {
   /// We list all the custom warnings/infos/errors
   @override
-  List<LintRule> getLintRules(CustomLintConfigs configs) => [
+  List<LintRule> getLintRules(CustomLintConfigs configs) => const [
         AvoidClassTextCode(),
         AvoidClassTextButtonCode(),
         AvoidClassAssetImageCode(),
